@@ -36,8 +36,6 @@ def valid_move?(board, move)
   end
 end
 
-board = [" "," "," "," "," "," "," "," "," "]
-
 def turn
   puts "Please enter 1-9:"
   input = gets.strip
