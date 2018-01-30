@@ -43,6 +43,7 @@ def turn(board)
   while ! valid_move?(board, index)
     puts "That's not a valid move. Please try again."
     input = gets.strip
+    index = input_to_index(input)
   end
   move(board, index)
   display_board(board)
