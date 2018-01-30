@@ -40,5 +40,5 @@ puts "Please enter 1-9:"
 
 def turn
   input = gets.strip
-  input_to_index(input)
-  
+  until input_to_index(input)
+    "Please enter a valid move, 1-9."
