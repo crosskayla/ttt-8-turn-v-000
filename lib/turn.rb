@@ -46,4 +46,5 @@ def turn
     move(board, index)
   else
     "Nah"
+  end
 end
