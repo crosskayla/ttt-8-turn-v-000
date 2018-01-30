@@ -1,4 +1,4 @@
-#display_board 
+#display_board
 #argument -> array
 #output -> prints board
 
@@ -11,8 +11,8 @@ def display_board(board)
 end
 
 #display_board
-#argument -> array
-#output -> prints board
+#argument -> user string
+#output -> integer for array element
 
 def input_to_index(input)
   return input.to_i - 1
