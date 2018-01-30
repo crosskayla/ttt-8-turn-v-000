@@ -18,10 +18,20 @@ def move(board, index, character = "X")
   board[index] = character
 end
 
-def position_taken?(board, index)
-  if board[index] == "" || board[index] == " " || board[index] == nil
+
+def position_taken?(board, move)
+  if board[move] == "" || board[move] == " " || board[move] == nil
     return false
-  elsif board[index] == "X" || board[index] == "O"
+  elsif board[move] == "X" || board[move] == "O"
+    return true
+  end
+end
+
+def valid_move?(board, move)
+  if position_taken?(board, move)
+    puts "There's already something there. Please choose a free space."
+    return false
+  elsif move >= 0 && move <= (board.length-1)
     return true
   end
 end
