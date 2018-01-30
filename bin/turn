@@ -3,3 +3,5 @@
 require_relative "../lib/turn.rb"
 
 board = [" "," "," "," "," "," "," "," "," "] #defines empty board
+
+puts "Something"
