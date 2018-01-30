@@ -35,3 +35,5 @@ def valid_move?(board, move)
     return true
   end
 end
+
+puts "Please enter 1-9:"
