@@ -42,3 +42,4 @@ def turn
   input = gets.strip
   until input_to_index(input)
     "Please enter a valid move, 1-9."
+end
