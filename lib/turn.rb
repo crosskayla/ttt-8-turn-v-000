@@ -36,10 +36,10 @@ def valid_move?(board, move)
   end
 end
 
+board = [" "," "," "," "," "," "," "," "," "]
 puts "Please enter 1-9:"
 
 def turn
   input = gets.strip
-  until input_to_index(input)
-    "Please enter a valid move, 1-9."
+  valid_move?(input_to_index(input))
 end
