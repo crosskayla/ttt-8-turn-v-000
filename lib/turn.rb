@@ -10,10 +10,18 @@ def display_board(board)
   puts " #{board[6]} | #{board[7]} | #{board[8]} "
 end
 
-#display_board
-#argument -> user string
-#output -> integer for array element
-
 def input_to_index(input)
   return input.to_i - 1
+end
+
+def move(board, index, character = "X")
+  board[index] = character
+end
+
+def position_taken?(board, index)
+  if board[index] == "" || board[index] == " " || board[index] == nil
+    return false
+  elsif board[index] == "X" || board[index] == "O"
+    return true
+  end
 end
