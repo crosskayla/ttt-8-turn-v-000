@@ -43,6 +43,7 @@ def turn(board)
   if valid_move?(board, index)
     move(board, index)
   else
-    "Nah"
+    "That's not a valid move. Please try again."
+    input = gets.strip
   end
 end
