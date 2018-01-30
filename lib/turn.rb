@@ -43,7 +43,6 @@ def turn(board)
   until valid_move?(board, index)
     puts "That's not a valid move. Please try again."
     input = gets.strip
-  else
-    move(board, index)
   end
+  move(board, index)
 end
